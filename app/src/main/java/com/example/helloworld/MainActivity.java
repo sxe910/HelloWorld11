@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         theCorrectAnsTextView = (TextView)findViewById(R.id.textView2);
     }
 
-
+    //Comment for revert
     public void buttonClick(View v)
     {
         TextView tv = (TextView)findViewById(R.id.textView2);
