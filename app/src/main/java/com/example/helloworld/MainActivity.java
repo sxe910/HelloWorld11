@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.view.View;
 import android.widget.TextView;
+import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
     TextView theCorrectAnsTextView;
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     {
         TextView tv = (TextView)findViewById(R.id.textView2);
         tv.setText("Scream if you love Android Studio!");
+    }
+    public void colorClick(View v) {
+        TextView tv = findViewById(R.id.textView2);
+        tv.setTextColor(Color.RED);
     }
 
 }
