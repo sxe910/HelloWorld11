@@ -7,8 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView theCorrectAnsTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +23,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        theCorrectAnsTextView = (TextView)findViewById(R.id.textView2);
     }
+
+
+    public void buttonClick(View v)
+    {
+        TextView tv = (TextView)findViewById(R.id.textView2);
+        tv.setText("Scream if you love Android Studio!");
+    }
+
 }
